@@ -1,1 +1,58 @@
 /* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #ededed #fff;
+}
+
+*::-webkit-scrollbar {
+  width: 4px;
+}
+
+*::-webkit-scrollbar-track {
+  background: black;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #ededed;
+  border-radius: 10px;
+}
+
+*::-webkit-scrollbar-thumb:active {
+  border-radius: 10px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  font-size: 16px;
+  font-variation-settings: "slnt" 0;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  min-height: 100vh;
+  background-size: contain;
+}
+
+body,
+body > app-root {
+  overflow-x: hidden !important;
+}
+
+body > app-root {
+  max-width: 1440px !important;
+}
